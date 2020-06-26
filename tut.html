@@ -3,36 +3,69 @@
   <head>
     <title>LOA Digital</title>
     <style>
+    table {
+      border: 3px solid black;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    th,td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: center;
+
+    }
+    th {
+      background-color: lightgray;
+    }
+
     h1 {
       color: darkmagenta;
       text-align: center;
+      border: 3px solid red;
     }
-    div {
+    #tabela {
+      font-family: Arial;
+      font-size: 36px;
+
+
+    }
+    #teal {
       background-color: teal;
       width: 500px;
       height: 400px;
       margin: 30px;
       padding: 50px;
+      font-family: Arial, sans-serif;
+      border: 3px solid red;
+    }
+    #top {
+      font-size: 36px;
+    }
+    .name {
+      font-weight: bold;
     }
     </style>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>Verzija 0</h1>
-  <div>
+  <div id="teal">
     <p>Intro</p>
-    <p>Najiskusnija web stranica.</p>
+    <p>Najiskusnija <span class="name">web</span> stranica.</p>
   </div>
     <ul>
       <li>Test1</li>
       <li>Test2</li>
     </ul>
     <ol>
+      <div id="top">
       <li>t1</li>
       <li>t1</li>
       <li>t1</li>
+    </div>
     </ol>
     <img src="nebula.jbg">
+    <div id="tabela">
     <table>
       <tr>
         <th>da</th>
@@ -50,6 +83,7 @@
         <td>mhm</td>
       </tr>
     </table>
+  </div>
     <form>
       <input type="text" placeholder="Full Name" name="name">
       <button>Submit!</button>
