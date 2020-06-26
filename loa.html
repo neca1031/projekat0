@@ -22,8 +22,12 @@
         font-weight: bold;
       }
       form {
-        width: 300px;
-      margin: 0 auto;
+        width: 100px;
+        margin: 0 auto;
+
+
+
+  transform: translate( -50%);
       }
       h2 {
         text-align: center;
@@ -43,11 +47,28 @@
     <h1> LOA Digital Marketing </h1>
     <p> <span class="name">LOA</span> vam pruza vrhunske usluge web dizajna, marketinga i grafickog dizajna
       .<br>
+
     Prijavite se odmah!</p>
     <form>
-      <input type="text" placeholder="Ime Retarda" name="name">
-      <button>Prijavite se!</button>
+      <div>
+        <input name="name" type="text" placeholder="Ime Retarda">
+        <input name="password" type="password" placeholder="Password">
+      </div>
+      <div>
+        Kako ste saznali za nas?
+        <input name="nacin" type="radio" value="instagram">instagram
+        <input name="nacin" type="radio" value="facebook">facebook
+        <input name="nacin" type="radio" value="twitter">twitter
+        </div>
+        <div>
+          <input name="country" list="countries" placeholder="Country">
+          <datalist id="countries">
+            <option value="Albania">
+            <option value="Albania">
+            <option value="Albania">
+              </div>
     </form>
+
     <h2> KONTAKT - 063 8767 335</h2>
     <img src="https://i.kym-cdn.com/entries/icons/facebook/000/033/233/cover8.jpg"
 
